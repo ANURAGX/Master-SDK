@@ -11,10 +11,12 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import com.anurag.mastersdk.ui.theme.MasterSDKTheme
+import com.anurag.sdk1.Sdk1InterfaceFactory
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        Sdk1InterfaceFactory.getObject().init()
         setContent {
             MasterSDKTheme {
                 // A surface container using the 'background' color from the theme

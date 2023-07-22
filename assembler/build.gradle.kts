@@ -9,6 +9,8 @@ java {
 
 dependencies {
     compileOnly("com.android.tools.build:gradle:8.0.2")
+
+    testImplementation("junit:junit:4.13.2")
 }
 
 
